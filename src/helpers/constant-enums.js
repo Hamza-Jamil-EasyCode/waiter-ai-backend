@@ -1,0 +1,25 @@
+const USER_ROLE = {
+    SUPER_ADMIN: 'SUPER_ADMIN',
+    TENANT_ADMIN: 'TENANT_ADMIN'
+};
+
+const TENANT_STATUS = {
+    ACTIVE: 'ACTIVE',
+    SUSPENDED: 'SUSPENDED'
+};
+
+const CATALOG_STATUS = {
+    DRAFT: 'DRAFT',
+    PUBLISHED: 'PUBLISHED',
+    ARCHIVED: 'ARCHIVED'
+};
+
+Object.freeze(USER_ROLE);
+Object.freeze(TENANT_STATUS);
+Object.freeze(CATALOG_STATUS);
+
+module.exports = {
+    USER_ROLE,
+    TENANT_STATUS,
+    CATALOG_STATUS
+};
